@@ -1,0 +1,20 @@
+export default class WordCard extends
+Component {
+render() {
+ return (
+ <div>
+     export default class WordCard extends Companent {
+         constructor{
+             super (props)
+             this.state ={
+                 attempt: '',
+             }
+         }
+     }
+{ Array.from(this.props.value).map((c, i) => <CharacterCard value={c} key={i}/>) }
+ </div>
+ );
+ }
+}
+
+

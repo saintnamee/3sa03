@@ -4,18 +4,14 @@ import CharacterCard from './CharacterCard';
 
 
 class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      attempt : '',
-    }
-  }
+  
   render() {
     return (
+      
       <div className="App">
-        <CharacterCard value="Hello"/>
-        <CharacterCard value="Sittidet"/>
-        <CharacterCard value="SaiNt"/>
+      
+       Array.from(word).map((c, i) => <CharacterCard value={c} key={i}/>)
+
 
 
 
