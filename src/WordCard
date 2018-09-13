@@ -1,9 +1,8 @@
-export default class WordCard extends
-Component {
-render() {
- return (
- <div>
-     export default class WordCard extends Companent {
+import React, { Component } from 'react';
+import './App.css';
+import CharacterCard from './CharacterCard';
+
+export default class WordCard extends Component {
          constructor{
              super (props)
              this.state ={
@@ -11,7 +10,10 @@ render() {
              }
          }
      }
-{ Array.from(this.props.value).map((c, i) => <CharacterCard value={c} key={i}/>) }
+     render() {
+ return (
+ <div>
+    { Array.from(this.props.value).map((c, i) => <CharacterCard value={c} key={i}/>) }
  </div>
  );
  }
