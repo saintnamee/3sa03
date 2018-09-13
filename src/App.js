@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import CharacterCard from './CharacterCard';
-import WordCard from './WordCard';
-
-const word = "Hello";
+import WordCard from './WordCard'
 class App extends Component {
-  
+
   render() {
     return (
-      
+
       <div>
- <WordCard value="hello"/>
+        <WordCard value="hello" />
       </div>
 
     );
